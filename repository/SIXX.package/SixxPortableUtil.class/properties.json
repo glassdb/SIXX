@@ -1,0 +1,14 @@
+{
+	"category" : "SIXX-Squeak",
+	"classinstvars" : [
+		"settings" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NorbertHartl 08/02/2010 17:58",
+	"instvars" : [
+		 ],
+	"name" : "SixxPortableUtil",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

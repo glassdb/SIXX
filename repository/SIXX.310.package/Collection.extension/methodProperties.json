@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"createInstanceOf:withSixxElement:" : "mu 6/25/2004 03:32" },
+	"instance" : {
+		"initializeFromSixxElement:context:" : "dkh 10/07/2008 20:43",
+		"sixxContentOn:indent:context:" : "NorbertHartl 08/04/2010 23:38",
+		"sixxDo:" : "mu 9/27/2007 14:43",
+		"sixxIndexFieldsOn:indent:context:" : "NorbertHartl 08/04/2010 23:37",
+		"sixxMixedFieldsOn:indent:context:" : "mu 6/25/2004 04:55" } }

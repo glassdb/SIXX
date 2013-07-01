@@ -1,0 +1,7 @@
+{
+	"class" : {
+		"createInstanceOf:withSixxElement:" : "mu 6/26/2004 18:36",
+		"readShortHexFrom:" : "minami 7/14/2004 01:00" },
+	"instance" : {
+		"shortHexString" : "minami 7/14/2004 00:42",
+		"sixxContentOn:indent:context:" : "minami 7/14/2004 00:43" } }

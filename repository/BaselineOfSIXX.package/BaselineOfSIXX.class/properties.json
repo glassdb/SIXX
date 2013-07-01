@@ -1,0 +1,14 @@
+{
+	"category" : "BaselineOfSIXX",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "BaselineOfSIXX",
+	"pools" : [
+		 ],
+	"super" : "BaselineOf",
+	"type" : "normal" }

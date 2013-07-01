@@ -1,0 +1,8 @@
+{
+	"class" : {
+		"example" : "dkh 10/09/2008 16:17" },
+	"instance" : {
+		"embedded" : "dkh 10/09/2008 16:16",
+		"embedded:" : "dkh 10/09/2008 16:16",
+		"notEmbedded" : "dkh 10/09/2008 16:17",
+		"notEmbedded:" : "dkh 10/09/2008 16:16" } }

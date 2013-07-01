@@ -1,0 +1,14 @@
+{
+	"category" : "SIXX-Core",
+	"classinstvars" : [
+		"default" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NorbertHartl 08/02/2010 17:58",
+	"instvars" : [
+		"elementsDict" ],
+	"name" : "SixxResolver",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

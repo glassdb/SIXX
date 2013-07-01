@@ -1,0 +1,14 @@
+{
+	"category" : "SIXX-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NorbertHartl 08/02/2010 17:58",
+	"instvars" : [
+		"originalError" ],
+	"name" : "SixxXmlParseError",
+	"pools" : [
+		 ],
+	"super" : "Error",
+	"type" : "normal" }

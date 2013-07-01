@@ -1,0 +1,14 @@
+{
+	"category" : "SIXX-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NorbertHartl 08/02/2010 17:58",
+	"instvars" : [
+		"id" ],
+	"name" : "SixxMockHeader",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

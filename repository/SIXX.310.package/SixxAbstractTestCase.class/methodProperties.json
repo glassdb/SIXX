@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"restoreLocalTimeZone" : "dkh 10/01/2008 15:22",
+		"setGMTTimeZone" : "dkh 10/01/2008 18:18",
+		"setUp" : "dkh 10/01/2008 15:15",
+		"tearDown" : "dkh 10/01/2008 15:16" } }

@@ -1,0 +1,18 @@
+{
+	"category" : "SIXX-Core",
+	"classinstvars" : [
+		"protoClassResolver",
+		"protoFormatterResolver" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NorbertHartl 08/02/2010 17:58",
+	"instvars" : [
+		"objectsDictionary",
+		"classResolver",
+		"formatterResolver",
+		"stack" ],
+	"name" : "SixxContext",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

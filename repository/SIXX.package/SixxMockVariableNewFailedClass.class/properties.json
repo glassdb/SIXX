@@ -1,0 +1,16 @@
+{
+	"category" : "SIXX-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NorbertHartl 08/02/2010 17:58",
+	"instvars" : [
+		"att1",
+		"att2",
+		"att3Block" ],
+	"name" : "SixxMockVariableNewFailedClass",
+	"pools" : [
+		 ],
+	"super" : "Array",
+	"type" : "normal" }

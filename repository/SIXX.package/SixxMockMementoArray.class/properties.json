@@ -1,0 +1,14 @@
+{
+	"category" : "SIXX-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "NorbertHartl 08/02/2010 17:58",
+	"instvars" : [
+		 ],
+	"name" : "SixxMockMementoArray",
+	"pools" : [
+		 ],
+	"super" : "Array",
+	"type" : "normal" }

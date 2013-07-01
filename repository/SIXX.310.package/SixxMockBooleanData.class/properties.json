@@ -1,0 +1,15 @@
+{
+	"category" : "SIXX-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"embedded",
+		"notEmbedded" ],
+	"name" : "SixxMockBooleanData",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
