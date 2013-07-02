@@ -5,12 +5,13 @@ gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
 "Update GLASS to 1.0-beta.9.1"
 Metacello new
-  project: 'GLASS';
-  repository: 'http://seaside.gemstone.com/ss/MetacelloRepository';
+  configuration: 'GLASS';
+  repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
   get.
-Metacello image
-  project: 'GLASS';
+Metacello new
+  configuration: 'GLASS';
   version: '1.0-beta.9.1';
+  repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
   load.
 
 "Load Tode ... "
