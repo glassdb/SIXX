@@ -4,8 +4,9 @@ Transcript cr; show: 'travis---->travisCI.st'.
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
 "Update GLASS to 1.0-beta.9.1"
-Metacello image
+Metacello new
   project: 'GLASS';
+  repository: 'http://seaside.gemstone.com/ss/MetacelloRepository';
   get.
 Metacello image
   project: 'GLASS';
