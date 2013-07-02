@@ -4,18 +4,7 @@ Transcript cr; show: 'travis---->travisCI.st'.
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
 [
-"Update GLASS to 1.0-beta.9.1"
-Metacello new
-  configuration: 'GLASS';
-  repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
-  get.
-Metacello new
-  configuration: 'GLASS';
-  version: '1.0-beta.9.1';
-  repository: 'http://seaside.gemtalksystems.com/ss/MetacelloRepository';
-  load.
-
-"Load Tode ... "
+"Load SIXX... "
 Metacello new
 	baseline: 'SIXX';
   repository: 'filetree://', gitPath, '/SIXX/repository';
