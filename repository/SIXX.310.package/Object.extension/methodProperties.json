@@ -4,9 +4,9 @@
 	"instance" : {
 		"basicSixxOn:originator:name:indent:context:" : "mu 10/4/2007 19:26",
 		"initializeFromSixxElement:context:" : "noha 09/28/2008 15:04",
-		"initializeIndexFieldsFromSixxElement:context:" : "dkh 10/07/2008 20:46",
-		"initializeInstVarsFromSixxElement:context:" : "dkh 10/07/2008 20:47",
-		"initializeMixedFieldsFromSixxElement:context:" : "dkh 10/07/2008 16:37",
+		"initializeIndexFieldsFromSixxElement:context:" : "PaulDeBruicker 09/24/2013 19:44",
+		"initializeInstVarsFromSixxElement:context:" : "PaulDeBruicker 09/24/2013 18:45",
+		"initializeMixedFieldsFromSixxElement:context:" : "PaulDeBruicker 09/24/2013 19:45",
 		"sixxAt:put:" : "mu 6/25/2004 01:12",
 		"sixxChildrenContentsOn:indent:context:" : "noha 09/28/2008 13:28",
 		"sixxContentOn:indent:context:" : "NorbertHartl 08/04/2010 11:54",

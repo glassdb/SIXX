@@ -33,6 +33,6 @@
 		"testReadSixxForStringUsingCDATA" : "mu 12/19/2006 18:41",
 		"testReadSixxForTime" : "kuri-t 6/10/2002 14:39",
 		"testReadSixxForUndefinedObject" : "kuri-t 6/10/2002 14:43",
-		"testReadSixxForVariableObject" : "mu 6/25/2004 02:12",
+		"testReadSixxForVariableObject" : "PaulDeBruicker 09/24/2013 19:37",
 		"testReadSixxForVariableObjectNoData" : "MU 10/27/2002 18:32",
 		"testReadSixxWithClassDoesNotExist" : "dkh 03/25/2009 11:46" } }
