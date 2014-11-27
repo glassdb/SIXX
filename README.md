@@ -17,4 +17,30 @@ Metacello new
     load.
 ```
 
+### Examples
+
+```Smalltalk
+  "Create SIXX as String"
+  #( 1 2 3) sixxString.
+
+  "Create SIXX on Stream"
+  | strm |
+  strm := WriteStream on: String new.
+  #( 1 2 3) sixxOn: strm.
+
+  "Create object from SIXX string or stream"
+  | obj |
+  obj := Object readSixxFrom: #( 1 2 3) sixxString.
+
+  "Create a large object from SIXX string or stream"
+  | obj |
+  MCPlatformSupport commitOnAlmostOutOfMemoryDuring: [
+    UserGlobals at: #'MY_SIXX_ROOT_ARRAY' put: Array new.
+    System commitTransaction.
+    obj := Object readSixxFrom: #( 1 2 3) sixxString readStream
+      context: SixxContext forRead
+      persistentRoot: (UserGlobals at: #'MY_SIXX_ROOT_ARRAY')
+  ].
+  obj
+```
 See also: https://github.com/mumez/SIXX
