@@ -8,9 +8,13 @@ This port was forked from SIXX-mu.136 (13 July 2008, 20:40:36).
 
 ###  GemStone Installation
 
-Upgrade to GLASS 1.0-beta.9.1, then:
-
 ```Smalltalk
+Gofer new
+  package: 'GsUpgrader-Core';
+  url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
+  load.
+(Smalltalk at: #GsUpgrader) upgradeGLASS1.
+
 Metacello new
     baseline: 'SIXX';
     repository: 'github://glassdb/SIXX:master/repository';
