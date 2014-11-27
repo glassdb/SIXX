@@ -5,7 +5,7 @@
 	"classvars" : [
 		"ConstantsDetectionMap",
 		"ConstantsDetectionMapByRoot" ],
-	"commentStamp" : "DaleHenrichs 12/03/2010 14:01",
+	"commentStamp" : "",
 	"instvars" : [
 		"xmlVersion",
 		"xmlEncoding",
