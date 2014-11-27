@@ -3,18 +3,29 @@
 Transcript cr; show: 'travis---->travisCI.st'.
 gitPath := (FileDirectory default directoryNamed: 'git_cache') fullName.
 
-[
-"Load SIXX... "
-Metacello new
-	baseline: 'SIXX';
-  repository: 'filetree://', gitPath, '/SIXX/repository';
+Gofer new
+  package: 'GsUpgrader-Core';
+  url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
   load.
-] on: Warning do: [:ex | 
-  Transcript cr; show: 'WARNING: ', ex description.
-  ex resume: true ].
+(Smalltalk at: #GsUpgrader) upgradeGrease.
 
-"Run the Tode tests"
-TravisCIHarness
-  value: #( 'BaselineOfSIXX' )
-  value: 'TravisCISuccess.txt' 
-  value: 'TravisCIFailure.txt'.
+"Load SIXX... "
+GsDeployer deploy: [
+  Metacello new
+    baseline: 'SIXX';
+    repository: 'filetree://', gitPath, '/SIXX/repository';
+    load ].
+
+true ifTrue: [
+  "Run all tests in image"
+  TravisCISuiteHarness
+    value: TestCase suite
+    value: 'TravisCISuccess.txt'
+    value: 'TravisCIFailure.txt'.
+] ifFalse: [
+  "Run the SIXX tests"
+  TravisCIHarness
+    value: #( 'BaselineOfSIXX' )
+    value: 'TravisCISuccess.txt' 
+    value: 'TravisCIFailure.txt'.
+].
