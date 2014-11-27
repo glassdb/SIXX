@@ -9,7 +9,7 @@
 		"testCompactRecoveryRead" : "mu 4/3/2007 00:00",
 		"testNext" : "kuri-t 6/10/2002 14:46",
 		"testNextMany" : "kuri-t 6/10/2002 14:47",
-		"testNextWithIdref" : "mu 4/2/2007 23:55",
+		"testNextWithIdref" : "dkh 11/27/2014 13:55",
 		"testPeek" : "kuri-t 6/10/2002 14:48",
 		"testPosition" : "kuri-t 6/10/2002 14:49",
 		"testReadEmptyStream" : "MU 2/28/2003 23:35",

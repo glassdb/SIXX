@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "DaleHenrichs 12/03/2010 14:01",
+	"commentStamp" : "",
 	"instvars" : [
 		 ],
 	"name" : "SixxMockMementoArray",
 	"pools" : [
 		 ],
 	"super" : "Array",
-	"type" : "normal" }
+	"type" : "variable" }

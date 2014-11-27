@@ -32,10 +32,6 @@ Metacello new
   strm := WriteStream on: String new.
   #( 1 2 3) sixxOn: strm.
 
-  "Create object from SIXX string or stream"
-  | obj |
-  obj := Object readSixxFrom: #( 1 2 3) sixxString.
-
   "Create SIXX for a large object"
   | strm |
   MCPlatformSupport commitOnAlmostOutOfMemoryDuring: [
@@ -45,6 +41,10 @@ Metacello new
     #( 1 2 3) sixxOn: strm persistentRoot: (UserGlobals at: #'MY_SIXX_ROOT_ARRAY')
   ].
   strm
+  
+  "Create object from SIXX string or stream"
+  | obj |
+  obj := Object readSixxFrom: #( 1 2 3) sixxString.
 
   "Create a large object from SIXX string or stream"
   | obj |

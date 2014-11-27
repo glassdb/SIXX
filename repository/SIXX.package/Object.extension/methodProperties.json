@@ -4,7 +4,7 @@
 	"instance" : {
 		"basicSixxOn:originator:name:indent:context:" : "mu 10/4/2007 19:26",
 		"initializeFromSixxElement:context:" : "noha 09/28/2008 15:04",
-		"initializeIndexFieldsFromSixxElement:context:" : "dkh 10/07/2008 20:46",
+		"initializeIndexFieldsFromSixxElement:context:" : "dkh 11/27/2014 14:32",
 		"initializeInstVarsFromSixxElement:context:" : "dkh 10/07/2008 20:47",
 		"initializeMixedFieldsFromSixxElement:context:" : "dkh 10/07/2008 16:37",
 		"sixxAt:put:" : "mu 6/25/2004 01:12",
