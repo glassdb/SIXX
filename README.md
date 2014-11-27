@@ -8,13 +8,53 @@ This port was forked from SIXX-mu.136 (13 July 2008, 20:40:36).
 
 ###  GemStone Installation
 
-Upgrade to GLASS 1.0-beta.9.1, then:
-
 ```Smalltalk
+Gofer new
+  package: 'GsUpgrader-Core';
+  url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
+  load.
+(Smalltalk at: #GsUpgrader) upgradeGrease.
+
 Metacello new
     baseline: 'SIXX';
     repository: 'github://glassdb/SIXX:master/repository';
     load.
 ```
 
+### Examples
+
+```Smalltalk
+  "Create SIXX as String"
+  #( 1 2 3) sixxString.
+
+  "Create SIXX on Stream"
+  | strm |
+  strm := WriteStream on: String new.
+  #( 1 2 3) sixxOn: strm.
+
+  "Create object from SIXX string or stream"
+  | obj |
+  obj := Object readSixxFrom: #( 1 2 3) sixxString.
+
+  "Create SIXX for a large object"
+  | strm |
+  MCPlatformSupport commitOnAlmostOutOfMemoryDuring: [
+    UserGlobals at: #'MY_SIXX_ROOT_ARRAY' put: Array new.
+    System commitTransaction.
+    strm := WriteStream on: String new.
+    #( 1 2 3) sixxOn: strm persistentRoot: (UserGlobals at: #'MY_SIXX_ROOT_ARRAY')
+  ].
+  strm
+
+  "Create a large object from SIXX string or stream"
+  | obj |
+  MCPlatformSupport commitOnAlmostOutOfMemoryDuring: [
+    UserGlobals at: #'MY_SIXX_ROOT_ARRAY' put: Array new.
+    System commitTransaction.
+    obj := Object readSixxFrom: #( 1 2 3) sixxString readStream
+      context: SixxContext forRead
+      persistentRoot: (UserGlobals at: #'MY_SIXX_ROOT_ARRAY')
+  ].
+  obj
+```
 See also: https://github.com/mumez/SIXX
