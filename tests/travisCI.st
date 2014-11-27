@@ -7,7 +7,7 @@ Gofer new
   package: 'GsUpgrader-Core';
   url: 'http://ss3.gemtalksystems.com/ss/gsUpgrader';
   load.
-(Smalltalk at: #GsUpgrader) upgradeGrease.
+(Smalltalk at: #GsUpgrader) upgradeGLASS1.
 
 "Load SIXX... "
 GsDeployer deploy: [
@@ -16,7 +16,7 @@ GsDeployer deploy: [
     repository: 'filetree://', gitPath, '/SIXX/repository';
     load ].
 
-true ifTrue: [
+false ifTrue: [
   "Run all tests in image"
   TravisCISuiteHarness
     value: TestCase suite
