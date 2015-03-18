@@ -8,7 +8,7 @@ baseline: spec
         configuration: 'XMLSupport'
           with: [ 
               spec
-                versionString: #'stable';
+                versionString: '1.2.2.1';
                 repository:
                     'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
         yourself.
