@@ -18,5 +18,5 @@ baseline: spec
         group: 'Core' with: #('SIXX');
         group: 'Tests' with: #() ].
   spec
-    for: #(#'gs3.1.x' #'gs3.2.x' #'gs3.3.x')
+    for: #(#'gs3.x')
     do: [ spec package: 'SIXX' with: [ spec file: 'SIXX.310' ] ]
