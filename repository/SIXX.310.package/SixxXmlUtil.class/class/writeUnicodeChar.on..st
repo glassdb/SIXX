@@ -1,7 +1,9 @@
 private
 writeUnicodeChar: aCharacter on: aWriteStream 
 	self settings useNCR
-		ifTrue: [aWriteStream nextPutAll: '&#';
-				 nextPutAll: (SixxPortableUtil charCodeOf: aCharacter) printString;
-				 nextPut: $;]
+		ifTrue: [
+			aWriteStream
+				nextPutAll: '&#';
+				print: (SixxPortableUtil charCodeOf: aCharacter);
+				nextPut: $;]
 		ifFalse: [aWriteStream nextPut: aCharacter]

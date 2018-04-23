@@ -8,9 +8,9 @@ baseline: spec
         configuration: 'XMLSupport'
           with: [ 
               spec
-                versionString: '1.2.2.1';
+                versionString: #'stable';
                 repository:
-                    'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
+                    'http://smalltalkhub.com/mc/PharoExtras/XMLParser/main' ];
         yourself.
       spec package: 'SIXX' with: [ spec requires: #('XMLSupport') ].
       spec

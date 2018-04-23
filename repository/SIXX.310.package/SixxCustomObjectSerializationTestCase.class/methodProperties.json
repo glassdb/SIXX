@@ -9,6 +9,6 @@
 		"testReadSixxWriteValueAndSixxReadValue" : "mu 10/7/2007 11:28",
 		"testSameSixxWriteValueAndSixxReadValue" : "mu 3/23/2007 11:04",
 		"testSharedSixxWriteValueAndSixxReadValue" : "noha 9/27/2008 18:37",
-		"testSixxInitialize" : "PaulDeBruicker 09/24/2013 18:51",
-		"testSixxPrepareWrite" : "PaulDeBruicker 09/24/2013 18:34",
+		"testSixxInitialize" : "mu 12/17/2006 22:38",
+		"testSixxPrepareWrite" : "mu 12/17/2006 22:35",
 		"testSixxStringForObjectWithId" : "mu 10/27/2007 16:13" } }
