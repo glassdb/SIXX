@@ -15,7 +15,7 @@ testParseXmlWithSixxYaxoXmlParserAdapter
 </sixx.object>
 '.
 	oldParser := SixxXmlUtil parserAdapter.
-	[SixxXmlUtil parserAdapter: SixxYaxoXmlParserAdapter.
+	[SixxXmlUtil parserAdapter: SixxYaxo3XmlParserAdapter.
 	result := Object readSixxFrom: sixxString.
 	self
 		should: [(result at: 1)

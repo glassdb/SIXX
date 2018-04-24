@@ -1,10 +1,10 @@
 tests
 testSixxStringForDoubleByteString
-  | expectedStr dbStr |
-  dbStr := (Character withValue: 16r300) asString.
-  expectedStr := '<sixx.object sixx.id="0" sixx.type="String" >' , dbStr
-    ,
-      '</sixx.object>
+	| expectedStr |
+	expectedStr :=  
+		'<sixx.object sixx.id="0" sixx.type="String" >',
+		(Character value: 16r300) asString,
+		'</sixx.object>
 '.
-  self
-    should: [ (Character withValue: 16r300) asString sixxString = expectedStr ]
+	self
+		should: [(Character value: 16r300) asString sixxString = expectedStr]

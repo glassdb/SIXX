@@ -2,7 +2,7 @@
 formatterFromSixxElement: sixxElement for: aClass context: dictionary 
 	| formatterName env resolver formatter |
 	formatterName := self formatterNameFromSixxElement: sixxElement.
- 	formatterName isEmptyOrNil ifTrue: [^nil].
+ 	formatterName isNil ifTrue: [^nil].
 	env := self envFromSixxElement: sixxElement.
 	resolver := dictionary formatterResolver.
 	formatter :=  resolver formatterAt: aClass in: env.

@@ -5,14 +5,14 @@ baseline: spec
     for: #'gemstone'
     do: [ 
       spec
-        configuration: 'XMLSupport'
+        configuration: 'XMLParser'
           with: [ 
               spec
-                versionString: '1.2.2.1';
+                versionString: #'stable';
                 repository:
-                    'http://seaside.gemtalksystems.com/ss/MetacelloRepository' ];
+                    'http://smalltalkhub.com/mc/PharoExtras/XMLParser/main' ];
         yourself.
-      spec package: 'SIXX' with: [ spec requires: #('XMLSupport') ].
+      spec package: 'SIXX' with: [ spec requires: #('XMLParser') ].
       spec
         group: 'default' with: #('Core');
         group: 'Core' with: #('SIXX');
