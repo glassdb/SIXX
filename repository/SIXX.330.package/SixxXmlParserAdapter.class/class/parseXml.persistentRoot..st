@@ -1,0 +1,3 @@
+actions
+parseXml: xmlStringOrStream persistentRoot: persistentArrayOrNil
+	self subclassResponsibility

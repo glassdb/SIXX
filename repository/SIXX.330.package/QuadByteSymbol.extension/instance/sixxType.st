@@ -1,0 +1,3 @@
+*sixx-private
+sixxType
+	^#Symbol

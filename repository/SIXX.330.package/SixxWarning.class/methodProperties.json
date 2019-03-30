@@ -1,0 +1,14 @@
+{
+	"class" : {
+		"signal:" : "MU 10/27/2002 17:23",
+		"signal:context:" : "MU 10/27/2002 17:23",
+		"signal:element:" : "MU 10/27/2002 17:27",
+		"signal:element:context:" : "dkh 09/29/2008 14:14" },
+	"instance" : {
+		"className" : "MU 10/26/2002 01:35",
+		"className:" : "MU 10/26/2002 01:35",
+		"context" : "MU 10/26/2002 01:35",
+		"context:" : "MU 10/26/2002 01:35",
+		"defaultAction" : "dkh 09/30/2008 10:29",
+		"element" : "MU 10/26/2002 01:35",
+		"element:" : "MU 10/26/2002 01:35" } }
