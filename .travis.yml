@@ -17,3 +17,6 @@ smalltalk_config:
 cache:
   directories:
     - $SMALLTALK_CI_CACHE
+
+notifications:
+  slack: gemtalksystems:4YWbzy6sJN9cE0FhxvUPP8nS
