@@ -21,6 +21,16 @@ Metacello new
     load.
 ```
 
+### GsDevKit_home installation (tODE)
+createStone sixx_353 3.5.3
+devKitCommandLine todeIt sixx_353 << EOF
+  # tODE commands
+  project install --url=http://gsdevkit.github.io/GsDevKit_home/SIXX.ston
+  project load SIXX
+  bu backup sixx.dbf
+EOF
+
+
 ### Examples
 
 ```Smalltalk
