@@ -22,6 +22,7 @@ Metacello new
 ```
 
 ### GsDevKit_home installation (tODE)
+```
 createStone sixx_353 3.5.3
 devKitCommandLine todeIt sixx_353 << EOF
   # tODE commands
@@ -29,6 +30,7 @@ devKitCommandLine todeIt sixx_353 << EOF
   project load SIXX
   bu backup sixx.dbf
 EOF
+```
 
 
 ### Examples
