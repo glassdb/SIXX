@@ -9,7 +9,8 @@
 		"stream",
 		"contextDictionary",
 		"isStartTagPut",
-		"isEndTagPut" ],
+		"isEndTagPut",
+		"persistentRoot" ],
 	"name" : "SixxWriteStream",
 	"pools" : [
 		 ],
