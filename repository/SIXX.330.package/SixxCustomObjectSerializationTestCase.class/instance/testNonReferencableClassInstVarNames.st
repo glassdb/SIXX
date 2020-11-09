@@ -1,8 +1,9 @@
 tests
 testNonReferencableClassInstVarNames
-	"SixxCustomObjectSerializationTestCase debug: #testNonReferencableClassInstVarNames"
-	| expectedStr a b shared array |
-	expectedStr := '<sixx.object sixx.id="0" sixx.type="Array" >
+  "SixxCustomObjectSerializationTestCase debug: #testNonReferencableClassInstVarNames"
+
+  | expectedStr a b shared array x |
+  expectedStr := '<sixx.object sixx.id="0" sixx.type="Array" >
 	<sixx.object sixx.id="1" sixx.type="SixxMockObjectWithNonRef class" >
 		<sixx.object sixx.name="att1" sixx.type="Time" >11:24:02 am</sixx.object>
 		<sixx.object sixx.id="2" sixx.name="att2" sixx.type="Time" >11:24:02 am</sixx.object>
@@ -14,21 +15,22 @@ testNonReferencableClassInstVarNames
 	<sixx.object sixx.idref="1" />
 </sixx.object>
 '.
-	shared := Time readSixxContentStringFrom: '11:24:02 am' readStream.
-	a := SixxMockObjectWithNonRef.
-	a att1: shared.
-	a att2: shared.
-	a cache1: shared.
-
-	b := SixxMockObjectWithNonRef2.
-	b att1: shared.
-	b att2: shared.
-	b cache1: shared.
-
-	array := Array with: a with: b with: a.
-
-	self
-		should: [array sixxString = expectedStr].
-
-	a att1: nil; att2: nil; cache1: nil.
-	b att1: nil; att2: nil; cache1: nil
+  shared := Time readSixxContentStringFrom: '11:24:02 am' readStream.
+  a := SixxMockObjectWithNonRef.
+  a att1: shared.
+  a att2: shared.
+  a cache1: shared.
+  b := SixxMockObjectWithNonRef2.
+  b att1: shared.
+  b att2: shared.
+  b cache1: shared.
+  array := Array with: a with: b with: a.
+  self should: [ (x := array sixxString) = expectedStr ].
+  a
+    att1: nil;
+    att2: nil;
+    cache1: nil.
+  b
+    att1: nil;
+    att2: nil;
+    cache1: nil
