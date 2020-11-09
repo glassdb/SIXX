@@ -19,4 +19,8 @@ baseline: spec
   spec
     for: #(#'gs3.3.x' #'gs3.4.x' #'gs3.5.x' #'gs3.6.x')
     do: [ spec package: 'SIXX' with: [ spec file: 'SIXX.330' ] ].
-  spec for: #(#'gs3.6.x') do: [ spec package: 'SIXX36x' ]
+  spec
+    for: #(#'gs3.6.x')
+    do: [ 
+      spec package: 'SIXX' with: [ spec includes: 'SIXX36x' ].
+      spec package: 'SIXX36x' with: [ spec requires: 'SIXX' ] ]
