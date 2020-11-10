@@ -1,0 +1,1 @@
+(name 'SIXX31x-dkh.1' message 'Split SixxClassResolver class>>initDefault out into separate package, since 3.1.x and 3.2.x, because ExecutableBlock no longer present in 3.2.x' id '40492c4a-69c2-49a6-8647-287307d83445' date '11/10/2020' time '08:45:59' author 'dkh' ancestors () stepChildren ())
