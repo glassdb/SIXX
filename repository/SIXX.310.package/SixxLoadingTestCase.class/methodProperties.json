@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"expectedFailures" : "dkh 11/09/2020 16:58",
 		"testReadCompactSixxForRecursiveArray" : "mu 4/2/2007 23:48",
 		"testReadCompactSixxForRecursiveDictionary" : "mu 4/2/2007 23:50",
 		"testReadSixxForArray" : "kuri-t 6/10/2002 14:23",
