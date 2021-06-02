@@ -4,7 +4,7 @@ on:
   push:
   pull_request:
   schedule:
-    - cron: "45 15 * * *"
+    - cron: "15 2 3 * *" #run job on the 3rd day of every month on the 15th minute of the 2nd hour
 
 jobs:
   build:
@@ -20,14 +20,15 @@ jobs:
       - uses: actions/checkout@v2
       - uses: hpi-swa/setup-smalltalkCI@v1
         with:
-          smalltalk-version: ${{ matrix.smalltalk }}
+          smalltalk-image: ${{ matrix.smalltalk }}
       - name: Run tests
         run: smalltalkci -s ${{ matrix.smalltalk }}
         shell: bash
         timeout-minutes: 20
-      - uses: ravsamhq/notify-slack-action@v1
+      - name: Report Status
+        uses: ravsamhq/notify-slack-action@v1
         if: always()
         with:
           status: ${{ job.status }} # required
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.DALEHENRICH_CHANNEL }} # required
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }} # required
