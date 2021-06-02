@@ -25,3 +25,9 @@ jobs:
         run: smalltalkci -s ${{ matrix.smalltalk }}
         shell: bash
         timeout-minutes: 20
+      - uses: ravsamhq/notify-slack-action@v1
+        if: always()
+        with:
+          status: ${{ job.status }} # required
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.DALEHENRICH_CHANNEL }} # required
