@@ -28,11 +28,12 @@ jobs:
   status:
     runs-on: ubuntu-18.04
     name: Report Status
-    uses: ravsamhq/notify-slack-action@v1
-    if: always()
-    needs:
-      - build
-    with:
-      status: ${{ build.status }} # required
-    env:
-      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }} # required
+    steps:
+      uses: ravsamhq/notify-slack-action@v1
+      if: always()
+      needs:
+        - build
+      with:
+        status: ${{ build.status }} # required
+     env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }} # required
