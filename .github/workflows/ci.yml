@@ -25,14 +25,11 @@ jobs:
         run: smalltalkci -s ${{ matrix.smalltalk }}
         shell: bash
         timeout-minutes: 20
-  status:
-    runs-on: ubuntu-18.04
-    if: always()
-    name: Report Status
-    needs:
-      - build
-    steps:
-      - uses: ravsamhq/notify-slack-action@v1
+      - name: Report Status
+        if: always()
+        uses: ravsamhq/notify-slack-action@v1
         with:
-          status: ${{ jobs.build.status }} # required
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }} # required
+          status: ${{ job.status }} 
+          notify_when: 'failure'
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }}      
