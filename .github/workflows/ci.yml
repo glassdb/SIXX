@@ -27,13 +27,12 @@ jobs:
         timeout-minutes: 20
   status:
     runs-on: ubuntu-18.04
+    if: always()
     name: Report Status
     needs:
       - build
     steps:
-      uses: ravsamhq/notify-slack-action@v1
-      if: always()
-      with:
-        status: ${{ build.status }} # required
-      env:
-        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }} # required
+      - uses: ravsamhq/notify-slack-action@v1
+        with:
+          status: ${{ build.status }} # required
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }} # required
