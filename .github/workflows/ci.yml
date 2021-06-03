@@ -25,10 +25,16 @@ jobs:
         run: smalltalkci -s ${{ matrix.smalltalk }}
         shell: bash
         timeout-minutes: 20
-      - uses: ravsamhq/notify-slack-action@v1
-        if: always()
+  slack-workflow-status:
+    if: always()
+    name: Post Workflow Status To Slack
+    needs:
+      - build
+    runs-on: ubuntu-18.04
+    steps:
+       - name: Slack Workflow Notification
+        uses: Gamesight/slack-workflow-status@master
         with:
-          status: ${{ job.status }} 
-          notify_when: 'failure'
-        env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }}
+          repo_token: ${{secrets.GITHUB_TOKEN}}
+          slack_webhook_url: ${{secrets.SLACK_DALEHENRICH}}
+          name: 'action run' 
