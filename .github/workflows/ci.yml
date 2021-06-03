@@ -34,5 +34,5 @@ jobs:
     steps:
       - uses: ravsamhq/notify-slack-action@v1
         with:
-          status: ${{ build.status }} # required
+          status: ${{ jobs.build.status }} # required
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }} # required
