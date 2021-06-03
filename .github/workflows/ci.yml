@@ -28,11 +28,11 @@ jobs:
   status:
     runs-on: ubuntu-18.04
     name: Report Status
+    needs:
+      - build
     steps:
       uses: ravsamhq/notify-slack-action@v1
       if: always()
-      needs:
-        - build
       with:
         status: ${{ build.status }} # required
       env:
