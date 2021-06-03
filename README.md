@@ -1,4 +1,4 @@
-SIXX [![Build Status](https://github.com/github/docs/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/glassdb/SIXX/actions/workflows/ci.yml)
+SIXX [![Build Status](https://github.com/glassdb/SIXX/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/glassdb/SIXX/actions/workflows/ci.yml)
 ====
 
 GemStone port of http://www.mars.dti.ne.jp/~umejava/smalltalk/sixx/index.html
