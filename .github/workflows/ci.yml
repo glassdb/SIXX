@@ -35,5 +35,5 @@ jobs:
         - build
       with:
         status: ${{ build.status }} # required
-     env:
+      env:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_DALEHENRICH }} # required
